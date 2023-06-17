@@ -1,0 +1,29 @@
+{
+  "name": "game-template",
+  "version": "1.0.0",
+  "description": "This is a game template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/input.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliemami-coder/game-template.git"
+  },
+  "keywords": [
+    "game",
+    "html",
+    "template",
+    "gameing",
+    "template"
+  ],
+  "author": "Ali Emami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliemami-coder/game-template/issues"
+  },
+  "homepage": "https://github.com/aliemami-coder/game-template#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
