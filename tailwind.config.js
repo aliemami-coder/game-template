@@ -21,6 +21,9 @@ module.exports = {
           '2xl': '6rem',
         },
       },
+      backgroundImage: {
+        'centerBg': "url('./public/images/centerBg.jpg')",
+      }
     },
   },
   plugins: [],
