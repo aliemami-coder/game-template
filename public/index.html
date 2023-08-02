@@ -10,39 +10,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="author" content="Ali Emami">
     <meta name="keywords" content="game,console,ps5,xbox,unreal-engine,unity,cryengine,gameplay">
-    <meta name="description" content="you can download many games."/>
-    <meta name=”robots” content="index, follow">
+    <meta name="description" content="you can download many games." />
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="style.css">
     <meta name="canonical" content="https://a-emami.ir">
 </head>
 
 <body class="font-poppins bg-gradient-from-t bg-gradient-to-b from-black to-[#4A2800] text-white h-full scroll-smooth">
 
-    <header class="mt-8 container relative z-20">
-        <nav class="flex justify-between">
+    <header class="py-8 sticky top-0 bg-black/60 z-50">
+        <nav class="flex container justify-between">
 
             <h1 class="text-3xl font-bold">LOGO</h1>
 
+            <button type="button" class="bg-transparent text-white text-2xl lg:hidden block" id="btnOpen">
+                |||
+            </button>
 
-            <div class="gap-20 items-center lg:flex hidden">
-                <a href="#" class="inline-block hover:text-primary duration-200">
-                    Home
-                </a>
-                <a href="#about" class="inline-block hover:text-primary duration-200">
-                    About us
-                </a>
-                <a href="#" class="inline-block hover:text-primary duration-200">
-                    Portfolio
-                </a>
-                <a href="#" class="inline-block hover:text-primary duration-200">
-                    News
-                </a>
-                <a href="#" class="inline-block bg-primary px-4 py-2 rounded-md hover:bg-primary/80 duration-200">
-                    Contact us
-                </a>
+            <div id="myMenu"
+                class="duration-1000 ease-in-out lg:bg-transparent bg-stone-800 lg:static fixed lg:px-0 lg:py-0 px-8 py-4 -right-full top-0 bottom-0 z-50">
+
+                <button type="button" class="bg-transparent text-white text-2xl lg:hidden block mb-10" id="btnClose">
+                    X
+                </button>
+
+                <div class="items-center flex lg:flex-row flex-col gap-20">
+                    <a href="#" class="inline-block hover:text-primary duration-200">
+                        Home
+                    </a>
+                    <a href="#about" class="inline-block hover:text-primary duration-200">
+                        About us
+                    </a>
+                    <a href="#" class="inline-block hover:text-primary duration-200">
+                        Portfolio
+                    </a>
+                    <a href="#" class="inline-block hover:text-primary duration-200">
+                        News
+                    </a>
+                    <a href="#" class="inline-block bg-primary px-4 py-2 rounded-md hover:bg-primary/80 duration-200">
+                        Contact us
+                    </a>
+                </div>
             </div>
         </nav>
-        
     </header>
 
     <section class="mt-32 container flex justify-between items-start gap-10">
@@ -66,7 +76,8 @@
         <div class="flex-1 text-center lg:block hidden">
             <img src="./images/cry.png" alt="cry" class="absolute top-56 xl:right-[500px] lg:right-[300px]">
 
-            <img src="./images/unity.png" alt="unity" class="absolute top-96 lg:right-[500px] 2xl:right-[850px] xl:right-[650px]">
+            <img src="./images/unity.png" alt="unity"
+                class="absolute top-96 lg:right-[500px] 2xl:right-[850px] xl:right-[650px]">
 
             <img src="./images/unreal-engine.png" alt="unreal-engine" class="absolute xl:right-64 lg:right-32 top-64">
 
@@ -168,7 +179,7 @@
             </p>
         </div>
 
-        <div class="relative">
+        <div class="relative z-20">
             <img src="./images/homeDots.svg" alt="dots" class="absolute -top-16 right-32 z-10">
             <img src="./images/homeCenterImage.jpg" alt="home image" class="w-full mt-16 rounded-2xl relative z-20">
         </div>
@@ -194,22 +205,26 @@
                 <div class="group hover:cursor-pointer">
                     <img src="./images/centerIcon1.svg" alt="icon" class="mx-auto group-hover:scale-125 duration-500">
                     <h4 class="my-8 group-hover:text-primary">Mobile Game Development</h4>
-                    <img src="./images/arrowRight.svg" alt="arrow icon" class="mx-auto group-hover:scale-125 duration-500">
+                    <img src="./images/arrowRight.svg" alt="arrow icon"
+                        class="mx-auto group-hover:scale-125 duration-500">
                 </div>
                 <div class="group hover:cursor-pointer">
                     <img src="./images/centerIcon2.svg" alt="icon" class="mx-auto group-hover:scale-125 duration-500">
                     <h4 class="my-8 group-hover:text-primary">PC Game Development</h4>
-                    <img src="./images/arrowRight.svg" alt="arrow icon" class="mx-auto group-hover:scale-125 duration-500">
+                    <img src="./images/arrowRight.svg" alt="arrow icon"
+                        class="mx-auto group-hover:scale-125 duration-500">
                 </div>
                 <div class="group hover:cursor-pointer">
                     <img src="./images/centerIcon3.svg" alt="icon" class="mx-auto group-hover:scale-125 duration-500">
                     <h4 class="my-8 group-hover:text-primary">PS4 Game Development</h4>
-                    <img src="./images/arrowRight.svg" alt="arrow icon" class="mx-auto group-hover:scale-125 duration-500">
+                    <img src="./images/arrowRight.svg" alt="arrow icon"
+                        class="mx-auto group-hover:scale-125 duration-500">
                 </div>
                 <div class="group hover:cursor-pointer">
                     <img src="./images/centerIcon4.svg" alt="icon" class="mx-auto group-hover:scale-125 duration-500">
                     <h4 class="my-8 group-hover:text-primary">AR/VR Solutions</h4>
-                    <img src="./images/arrowRight.svg" alt="arrow icon" class="mx-auto group-hover:scale-125 duration-500">
+                    <img src="./images/arrowRight.svg" alt="arrow icon"
+                        class="mx-auto group-hover:scale-125 duration-500">
                 </div>
 
             </div>
@@ -218,12 +233,14 @@
                 <div class="group hover:cursor-pointer">
                     <img src="./images/centerIcon5.svg" alt="icon" class="mx-auto group-hover:scale-125 duration-500">
                     <h4 class="my-8 group-hover:text-primary">AR/ VR design</h4>
-                    <img src="./images/arrowRight.svg" alt="arrow icon" class="mx-auto group-hover:scale-125 duration-500">
+                    <img src="./images/arrowRight.svg" alt="arrow icon"
+                        class="mx-auto group-hover:scale-125 duration-500">
                 </div>
                 <div class="group hover:cursor-pointer">
                     <img src="./images/centerIcon6.svg" alt="icon" class="mx-auto group-hover:scale-125 duration-500">
                     <h4 class="my-8 group-hover:text-primary">3D Modelings</h4>
-                    <img src="./images/arrowRight.svg" alt="arrow icon" class="mx-auto group-hover:scale-125 duration-500">
+                    <img src="./images/arrowRight.svg" alt="arrow icon"
+                        class="mx-auto group-hover:scale-125 duration-500">
                 </div>
 
             </div>
@@ -245,30 +262,37 @@
         <div class="grid grid-cols-12 grid-rows-2 gap-5 mt-20">
 
             <div class="md:col-span-4 col-span-6 overflow-hidden">
-                <img src="./images/projectImage1.png" alt="project image" class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
+                <img src="./images/projectImage1.png" alt="project image"
+                    class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
             </div>
             <div class="md:col-span-4 col-span-6 overflow-hidden">
-                <img src="./images/projectImage2.png" alt="project image" class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
+                <img src="./images/projectImage2.png" alt="project image"
+                    class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
             </div>
             <div class="md:col-span-4 col-span-6 overflow-hidden">
-                <img src="./images/projectImage3.png" alt="project image" class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
+                <img src="./images/projectImage3.png" alt="project image"
+                    class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
             </div>
 
 
             <div class="md:col-span-3 col-span-6 overflow-hidden">
-                <img src="./images/projectImage4.png" alt="project image" class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
+                <img src="./images/projectImage4.png" alt="project image"
+                    class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
             </div>
             <div class="md:col-span-4 col-span-6 overflow-hidden">
-                <img src="./images/projectImage5.png" alt="project image" class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
+                <img src="./images/projectImage5.png" alt="project image"
+                    class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
             </div>
             <div class="md:col-span-5 col-span-6 overflow-hidden">
-                <img src="./images/projectImage6.png" alt="project image" class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
+                <img src="./images/projectImage6.png" alt="project image"
+                    class="w-full h-full duration-700 hover:scale-150 hover:rotate-12">
             </div>
 
         </div>
 
         <div class="text-center mt-10">
-            <a href="#" class="inline-block px-8 py-3 rounded-lg text-white uppercase bg-white/10 duration-200 hover:bg-[#ffffff41] font-bold">
+            <a href="#"
+                class="inline-block px-8 py-3 rounded-lg text-white uppercase bg-white/10 duration-200 hover:bg-[#ffffff41] font-bold">
                 see all
             </a>
         </div>
@@ -297,7 +321,8 @@
             <div class="flex-1 lg:max-w-md">
                 <form action="" class="w-full">
                     <div class="relative">
-                        <input type="email" required title="Email" class="bg-white rounded-lg md:pr-36 md:pl-10 px-4 py-5 w-full text-black"
+                        <input type="email" required title="Email"
+                            class="bg-white rounded-lg md:pr-36 md:pl-10 px-4 py-5 w-full text-black"
                             placeholder="Enter Email Address" />
                         <button type="submit"
                             class="bg-primary duration-200 hover:bg-primary/80 rounded-lg px-6 py-3 text-white md:absolute md:mt-0 mt-8 right-2 top-2">
@@ -310,7 +335,8 @@
 
     </section>
     <footer class="mt-20 bg-black pt-14">
-        <div class="container flex lg:flex-nowrap md:flex-wrap md:flex-row flex-col justify-between items-start gap-20 pb-10">
+        <div
+            class="container flex lg:flex-nowrap md:flex-wrap md:flex-row flex-col justify-between items-start gap-20 pb-10">
             <div class="flex-1">
                 <h2 class="font-bold text-3xl uppercase">
                     logo
@@ -371,18 +397,23 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex lg:flex-col xl:flex-row items-center md:justify-start justify-center xl:gap-4 lg:gap-2 md:self-end self-center">
+            <div
+                class="flex lg:flex-col xl:flex-row items-center md:justify-start justify-center xl:gap-4 lg:gap-2 md:self-end self-center">
                 <a href="#">
-                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/facebook.svg" alt="facebook">
+                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/facebook.svg"
+                        alt="facebook">
                 </a>
                 <a href="#">
-                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/instagram.svg" alt="instagram">
+                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/instagram.svg"
+                        alt="instagram">
                 </a>
                 <a href="#">
-                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/twitter.svg" alt="twitter">
+                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/twitter.svg"
+                        alt="twitter">
                 </a>
                 <a href="#">
-                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/linkedin.svg" alt="linkedin">
+                    <img class="hover:cursor-pointer hover:scale-125 duration-300" src="./images/linkedin.svg"
+                        alt="linkedin">
                 </a>
             </div>
         </div>
@@ -394,6 +425,7 @@
         </div>
     </footer>
 
+    <script src="../src/js/main.js"></script>
 </body>
 
 </html>
